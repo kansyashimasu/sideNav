@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}
+
+.Sidebar {
+  border: 1px solid blueviolet;
+  height: 100%;
+  width: 250px;
+}
+
+.SidebarList {
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.SidebarList #active {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.SidebarList .row:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.row #icon {
+  flex: 20%;
+  display: grid;
+  place-items: center;
+}
+
+.row #title {
+  flex: 80%;
+}
+
+.SidebarIcon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.SidebarIcon img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.SidebarIcon p {
+  padding-top: 10px;
+  color: aqua;
+}
